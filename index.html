@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A un clic de tu concierto">
+    <meta name="author" content="TicketStars">
+
+    <title>TicketStars</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts -->
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Background Slider -->
+    <link href="js/vegas/vegas.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top wow fadeIn" data-wow-duration="3s" data-wow-delay=".2s" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <a class="navbar-brand page-scroll wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.4s" href="#page-top">
+                <span class="logo">TicketStars</span> <i class="fa fa-star"></i>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#page-top">INICIO</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="tienda.html">TIENDA VIRTUAL</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="contacto.html">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="login.html" class="btn btn-border">INICIAR SESIÓN</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Intro Header -->
+<header class="intro">
+    <div class="intro-body">
+        <img src="img/logo.png" alt="TicketStars" class="wow fadeIn" data-wow-duration="4s" data-wow-delay=".4s">
+        <p class="intro-text wow fadeIn" data-wow-duration="7s" data-wow-delay=".7s"><br>A un clic de tu concierto</p>
+        <p><a href="#proximos-conciertos" class="page-scroll btn btn-border wow fadeIn" data-wow-duration="7s" data-wow-delay=".7s">PRÓXIMOS CONCIERTOS</a></p>
+    </div>
+</header>
+
+<!-- About Section -->
+<!-- <section id="about" class="container-fluid text-center wow fadeIn">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Tu entrada desde la comodidad de tu casa</h2>
+            <p>Una idea que nació de la incomodidad de las largas colas, entradas agotadas y precios de reventa!</p>
+        </div>
+    </div>
+</section> -->
+
+<!-- Action2 Section MailChimp Signup Form
+<section class="action2 container-fluid text-center wow fadeIn">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <h2>Get notified!</h2>
+            <p>
+                MailChimp Signup Form. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis pulvinar vestibulum.
+            </p>
+            <form role="form" action="http://forbetterweb.us11.list-manage.com/subscribe/post?u=4f751a6c58b225179404715f0&amp;id=18fc72763a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline subscribe-form" target="_blank" novalidate="">
+                <div class="input-group input-group-lg">
+                    <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+        <span class="input-group-btn">
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-white">Get notified!</button>
+        </span>
+                </div>
+                <div id="mce-responses">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section> -->
+
+<!-- Partidos -->
+<section id="partidos" style="background: rgba(250, 250, 250, 0.7);" class="container-fluid wow fadeIn">
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 style="padding-top:7px;" id="proximos-conciertos">Próximos Conciertos</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 wow fadeIn" data-wow-delay=".2s">
+                <div class="list-group">
+                  <div class="thumb">
+                    <div class="caption">Luego de congregar a casi 20 mil personas en su edición pasada del 2015, el Road to Ultra vuelve a Lima y espera superar lo logrado aquella vez en la que tuvimos nombres de la talla de Paul van Dyk, Afrojack, Fedde Le Grand, Dash Berlin.</div>
+                    <img class="list-group-item" src="img/conciertos/1.jpg" alt="">
+                  </div>
+                  <div class="list-group-item text-center">
+                      <h4>Road to Ultra Perú 2016</h4>
+                  </div>
+                  <p class="list-group-item"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i>&nbsp; Explanada de la Costa Verde</p>
+                  <p class="list-group-item"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; Viernes, 7 de Octubre del 2016</p>
+                  <p class="list-group-item"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>&nbsp; 6:00pm</p>
+                  <p class="list-group-item">
+                    <i class="fa fa-ticket fa-fw" aria-hidden="true"></i>&nbsp; Cantidad &nbsp; 
+                    <input id="input-buy" class="text-center" name="nTickets" value="1" min="1" max="10" type="number">
+                  </p>
+                  <a class="list-group-item text-center" href="prueba1.html"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>&nbsp;<strong>¡COMPRAR!</strong></a>
+                </div>
+            </div>
+            <div class="col-sm-6 wow fadeIn" data-wow-delay=".4s">
+                <div class="list-group">
+                  <div class="thumb">
+                    <div class="caption">Luego de congregar a casi 20 mil personas en su edición pasada del 2015, el Road to Ultra vuelve a Lima y espera superar lo logrado aquella vez en la que tuvimos nombres de la talla de Paul van Dyk, Afrojack, Fedde Le Grand, Dash Berlin.</div>
+                    <img class="list-group-item" src="img/conciertos/1.jpg" alt="">
+                  </div>
+                  <div class="list-group-item text-center">
+                      <h4>Road to Ultra Perú 2016</h4>
+                  </div>
+                  <p class="list-group-item"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i>&nbsp; Explanada de la Costa Verde</p>
+                  <p class="list-group-item"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; Viernes, 7 de Octubre del 2016</p>
+                  <p class="list-group-item"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>&nbsp; 6:00pm</p>
+                  <p class="list-group-item">
+                    <i class="fa fa-ticket fa-fw" aria-hidden="true"></i>&nbsp; Cantidad &nbsp; 
+                    <input id="input-buy" class="text-center" name="nTickets" value="1" min="1" max="10" type="number">
+                  </p>
+                  <a class="list-group-item text-center" href="prueba1.html"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>&nbsp;<strong>¡COMPRAR!</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Action2 Section -->
+<section class="action3 container-fluid text-center wow fadeIn">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>TicketStars revoluciona la venta de entradas a tus conciertos favoritos</h2>
+            <p>Varias empresas nos respaldan. Únete a nuestros auspiciadores.</p>
+            <p><a href="contacto.html" class="btn btn-white btn-lg">Ponte en contacto</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- sponsors
+<div id="sponsor" class="wow fadeIn">
+    <div class="container-fluid">
+        <div class="row sponsor text-center">
+            <div class="col-md-3 gray">
+                <a href="#"><img src="img/sponsors/logo1.png" alt=""></a>
+            </div>
+            <div class="col-md-3 gray">
+                <a href="#"><img src="img/sponsors/logo2.png" alt=""></a>
+            </div>
+            <div class="col-md-3 gray">
+                <a href="#"><img src="img/sponsors/logo3.png" alt=""></a>
+            </div>
+            <div class="col-md-3 gray">
+                <a href="#"><img src="img/sponsors/logo4.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<section id="contact2" class="container-fluid text-center wow fadeIn">
+    <div class="overlay"></div>
+    <div class="row">
+        <div class="col-md-4">
+            
+        </div>
+        <div class="col-md-4">
+            <h3>Síguenos</h3>
+            <ul class="list-inline hi-icon-effect">
+                <li><a class="hi-icon" target="_blank" href="https://twitter.com/TicketStars_Peru"><i class="fa fa-twitter fa-2x"></i></a></li>
+                <li><a class="hi-icon" target="_blank" href="https://www.facebook.com/TicketStars-143933436019475"><i class="fa fa-facebook fa-2x"></i></a></li>
+                <li><a class="hi-icon" target="_blank" href="mailto:contacto@ticketstars.pe"><i class="fa fa-envelope fa-lg"></i></a></li>
+            </ul>
+            <p>&copy; TicketStars 2016</p>
+        </div>
+        <div class="col-md-4">
+            
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/device.min.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- <script src="js/smoothscroll.js"></script> -->
+<script src="js/form.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+
+<!-- Background Slider -->
+<script src="js/vegas/vegas.min.js"></script>
+<script>
+    $('body').vegas({
+        delay: 9000,
+        timer: false,
+        transitionDuration: 2000,
+        slides: [
+            { src: 'img/0.jpg' },
+            { src: 'img/1.jpg' },
+            { src: 'img/2.jpg' }
+        ],
+        transition: 'swirlRight',
+        animation: 'kenburns'
+    });
+</script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.js"></script>
+<script>
+wow = new WOW( {
+    boxClass:     'wow',
+    animateClass: 'animated',
+    offset:       100
+    }
+);
+
+wow.init();
+</script>
+</body>
+</html>

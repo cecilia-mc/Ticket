@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A un clic de tu concierto">
+    <meta name="author" content="TicketStars">
+
+    <title>TicketStars</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts -->
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Background Slider -->
+    <link href="js/vegas/vegas.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top wow fadeIn" data-wow-duration="3s" data-wow-delay=".2s" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <a class="navbar-brand page-scroll wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.4s" href="#page-top">
+                <span class="logo">TicketStars</span> <i class="fa fa-star"></i>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="index.html">INICIO</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="tienda.html">TIENDA VIRTUAL</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#page-top">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="login.html" class="btn btn-border">INICIAR SESIÓN</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Intro Header -->
+<header class="intro">
+    <div class="intro-body">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".4s">Contáctanos</h2>
+                <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">Somos MISTICS AREQUIPA S.A.C.<br>Siéntete libre de contactarnos y te proveeremos alguna información acerca de las dudas que tengas.</p>
+                <div class="row wow fadeIn" data-wow-duration="1s" data-wow-delay=".8s">
+                    <div class="col-md-4">
+                        <i class="fa-fw icon ion-android-call"></i> +51 999 345 678
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa-fw icon ion-android-mail"></i> contacto@ticketstars.pe
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa-fw icon ion-ios-location"></i> Arequipa, Perú
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1">
+                <h2>Escríbenos</h2>
+                <!-- Contact Form - Enter your email address on line 17 of the mail/contact_me.php file to make this form work. -->
+                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+                <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+                <form name="sentMessage" id="contactForm" novalidate="">
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls">
+                            <label for="name" class="sr-only control-label">Nombre</label>
+                            <input type="text" class="form-control input-lg" placeholder="Nombre" id="name" required="" data-validation-required-message="Por favor ingresa tu nombre">
+                            <span class="help-block text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls">
+                            <label for="email" class="sr-only control-label">Email</label>
+                            <input type="email" class="form-control input-lg" placeholder="Email" id="email" required="" data-validation-required-message="Por favor ingresa tu email">
+                            <span class="help-block text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls">
+                            <label for="phone" class="sr-only control-label">Teléfono</label>
+                            <input type="tel" class="form-control input-lg" placeholder="Teléfono" id="phone" required="" data-validation-required-message="Por favor ingresa tu teléfono">
+                            <span class="help-block text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls">
+                            <label for="message" class="sr-only control-label">Mensaje</label>
+                            <textarea rows="3" class="form-control input-lg" placeholder="Mensaje" id="message" required="" data-validation-required-message="Por favor ingresa un mensaje" aria-invalid="false"></textarea>
+                            <span class="help-block text-danger"></span>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-5 text-center">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTicketStars-143933436019475&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=605485642944503" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact2" class="container-fluid text-center wow fadeIn">
+    <div class="overlay"></div>
+    <div class="row">
+        <div class="col-md-4">
+            
+        </div>
+        <div class="col-md-4">
+            <h3>Síguenos</h3>
+            <ul class="list-inline hi-icon-effect">
+                <li><a class="hi-icon" target="_blank" href="https://twitter.com/TicketStars_Peru"><i class="fa fa-twitter fa-2x"></i></a></li>
+                <li><a class="hi-icon" target="_blank" href="https://www.facebook.com/TicketStars-143933436019475"><i class="fa fa-facebook fa-2x"></i></a></li>
+                <li><a class="hi-icon" target="_blank" href="mailto:contacto@ticketstars.pe"><i class="fa fa-envelope fa-lg"></i></a></li>
+            </ul>
+            <p>&copy; TicketStars 2016</p>
+        </div>
+        <div class="col-md-4">
+            
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/device.min.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- <script src="js/smoothscroll.js"></script> -->
+<script src="js/form.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+
+<!-- Background Slider -->
+<script src="js/vegas/vegas.min.js"></script>
+<script>
+    $('body').vegas({
+        delay: 9000,
+        timer: false,
+        transitionDuration: 2000,
+        slides: [
+            { src: 'img/0.jpg' },
+            { src: 'img/1.jpg' },
+            { src: 'img/2.jpg' }
+        ],
+        transition: 'swirlRight',
+        animation: 'kenburns'
+    });
+</script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.js"></script>
+<script>
+wow = new WOW( {
+    boxClass:     'wow',
+    animateClass: 'animated',
+    offset:       100
+    }
+);
+
+wow.init();
+</script>
+</body>
+</html>

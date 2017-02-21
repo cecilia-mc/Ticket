@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A un clic de tu concierto">
+    <meta name="author" content="TicketStars">
+
+    <title>TicketStars</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts -->
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+
+    <!-- Background Slider -->
+    <link href="js/vegas/vegas.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top wow fadeIn" data-wow-duration="3s" data-wow-delay=".2s" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <a class="navbar-brand page-scroll wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.4s" href="#page-top">
+                <span class="logo">TicketStars</span> <i class="fa fa-star"></i>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="index.html">INICIO</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="tienda.html">TIENDA VIRTUAL</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="contacto.html">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="login.html" class="btn btn-border">INICIAR SESIÓN</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Intro Header -->
+<header class="intro">
+    <div class="intro-body wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
+        <nav>
+            <ol class="cd-multi-steps text-bottom count">
+                <li class="current"><em>Datos</em></li>
+                <li class=""><em>Resumen</em></li>
+                <li class=""><em>Pago</em></li>
+                <li><em>Confirmación</em></li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form class="form-signin" id="buy">
+                    <h2>Paso 1: Datos</h2>
+                    
+                    <div class="form-group">
+                        <label for="inputName" class="sr-only">Nombres</label>
+                        <input type="text" id="inputName" class="form-control" placeholder="Nombres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputLName" class="sr-only">Apellidos</label>
+                        <input type="text" id="inputLName" class="form-control" placeholder="Apellidos" required>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-4">
+                            <label for="inputTipoDoc" class="sr-only">Tipo de documento</label>
+                            <select class="form-control" id="inputTipoDoc">
+                                <option value="0" >DNI</option>
+                                <option value="1" >Passport</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-8">
+                            <label for="inputDoc" class="sr-only">Número de documento</label>
+                            <input type="text" id="inputDoc" class="form-control" placeholder="Número de documento" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail" class="sr-only">Email</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDate" class="sr-only">Fecha de Nacimiento</label>
+                        <input type="date" id="inputDate" class="form-control" placeholder="Fecha de Nacimiento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputTicketZone" class="sr-only">Zona</label>
+                        <select class="form-control" id="inputTicketZone">
+                            <option value="0" >VIP - S/.100.00</option>
+                            <option value="1" >General - S/.70.00</option>
+                        </select>
+                    </div>
+                    <div class="form-group text-left">
+                        <small>*Nota: Menores de 18 deben ir acompañados de un adulto responsable.</small>
+                    </div>
+                    <input type="hidden" id="invoice__token" name="invoice[_token]" value="-5b6A1G7R-ULpyc2i79M8EH0NX3XHbxqBqm9pp5s5sI" />
+                    <a href="prueba2.html" class="btn btn-border" type="submit"/><i class="fa fa-check fa-fw" aria-hidden="true"></i>&nbsp;Continuar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="contact2" class="container-fluid text-center wow fadeIn">
+    <div class="overlay"></div>
+    <div class="row">
+        <div class="col-md-4">
+            
+        </div>
+        <div class="col-md-4">
+            <h3>Síguenos</h3>
+            <ul class="list-inline hi-icon-effect">
+                <li><a class="hi-icon" target="_blank" href="https://twitter.com/TicketStars_Peru"><i class="fa fa-twitter fa-2x"></i></a></li>
+                <li><a class="hi-icon" target="_blank" href="https://www.facebook.com/TicketStars-143933436019475"><i class="fa fa-facebook fa-2x"></i></a></li>
+                <li><a class="hi-icon" target="_blank" href="mailto:contacto@ticketstars.pe"><i class="fa fa-envelope fa-lg"></i></a></li>
+            </ul>
+            <p>&copy; TicketStars 2016</p>
+        </div>
+        <div class="col-md-4">
+            
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/device.min.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- <script src="js/smoothscroll.js"></script> -->
+<script src="js/form.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+
+<!-- Background Slider -->
+<script src="js/vegas/vegas.min.js"></script>
+<script>
+    $('body').vegas({
+        delay: 9000,
+        timer: false,
+        transitionDuration: 2000,
+        slides: [
+            { src: 'img/0.jpg' },
+            { src: 'img/1.jpg' },
+            { src: 'img/2.jpg' }
+        ],
+        transition: 'swirlRight',
+        animation: 'kenburns'
+    });
+</script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.js"></script>
+<script>
+wow = new WOW( {
+    boxClass:     'wow',
+    animateClass: 'animated',
+    offset:       100
+    }
+);
+
+wow.init();
+</script>
+</body>
+</html>
